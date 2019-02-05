@@ -1,0 +1,21 @@
+{
+  "name": "carStoreApi",
+  "version": "1.0.0",
+  "description": "API using mongodb and express for carStore front-end",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "Gustavo Ruiz",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.4.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
